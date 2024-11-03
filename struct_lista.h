@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "struct_lista.h"
 
 typedef struct no {
     int indice;
@@ -108,59 +105,4 @@ int inserirListaOrdenada(Lista *lista, No *no) {
     lista->numElementos++;
     printf("Elemento inserido na ordem correta\n");
     return 1;
-}
-
-int main() {
-    Lista *minhaLista = criarLista();
-    
-    No *no1 = (No*)malloc(sizeof(No));
-    no1->indice = 1;
-    no1->dado = 10;
-    inserirLista(minhaLista, no1);
-
-    No *no2 = (No*)malloc(sizeof(No));
-    no2->indice = 2;
-    no2->dado = 5;
-    inserirLista(minhaLista, no2);
-
-    exibirLista(minhaLista);
-    
-    if (verificarVazia(minhaLista)) {
-        printf("A lista está vazia!\n");
-    } else {
-        printf("A lista não está vazia!\n");
-    }
-
-    No *buscado = buscarElemento(minhaLista, 1);
-    if (buscado != NULL) {
-        printf("Elemento encontrado: %i - %i\n", buscado->indice, buscado->dado);
-    } else {
-        printf("Elemento não encontrado\n");
-    }
-
-    excluirElemento(minhaLista, 1);
-    exibirLista(minhaLista);
-
-    liberarLista(minhaLista);
-
-    Lista *minhaLista2 = criarLista();
-
-    No *novoNo1 = (No*)malloc(sizeof(No));
-    novoNo1->indice = 1;
-    novoNo1->dado = 30;
-    inserirListaOrdenada(minhaLista2, novoNo1);
-
-    No *novoNo2 = (No*)malloc(sizeof(No));
-    novoNo2->indice = 2;
-    novoNo2->dado = 20;
-    inserirListaOrdenada(minhaLista2, novoNo2);
-
-    No *novoNo3 = (No*)malloc(sizeof(No));
-    novoNo3->indice = 3;
-    novoNo3->dado = 10;
-    inserirListaOrdenada(minhaLista2, novoNo3);
-
-    exibirLista(minhaLista2);
-
-    return 0;
 }

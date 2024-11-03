@@ -1,0 +1,7 @@
+Venda: Código: 1, Nome: limao, Quantidade: 15, Preço: 1.39
+Venda: Código: 2, Nome: pera, Quantidade: 5, Preço: 3.49
+Venda: Código: 2, Nome: pera, Quantidade: 4, Preço: 3.49
+Venda: Código: 1, Nome: pera, Quantidade: 22, Preço: 2.59
+Venda: Código: 3, Nome: manga, Quantidade: 15, Preço: 2.49
+Venda: Código: 1, Nome: pera, Quantidade: 23, Preço: 1.00
+Venda: Código: 2, Nome: b, Quantidade: 2, Preço: 2.00
